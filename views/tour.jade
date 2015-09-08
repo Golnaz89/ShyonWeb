@@ -1,4 +1,19 @@
 extends layout
 
 block content
-  p.lead tour
+  div.row
+    table.table(class='table-hover')
+      tr
+        th Date
+        th Venue
+        th RSVP
+      tr
+        td 9/23/2015
+        td Village Wines
+        td
+          button.btn(type='button', class='btn-default')  RSVP
+      tr
+        td 9/30/2015
+        td Lucid Jazz Lounge
+        td
+          button.btn(type='button', class='btn-default')  RSVP
