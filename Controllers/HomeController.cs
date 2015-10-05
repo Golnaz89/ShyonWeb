@@ -13,7 +13,7 @@ namespace ShyonWeb.Controllers
             return View();
         }
 
-        public IActionResult About()
+        public IActionResult Tour()
         {
             ViewData["Message"] = "Your application description page.";
 
