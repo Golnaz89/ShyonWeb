@@ -47,7 +47,7 @@
 /* Menu */
 
 #menu-wrapper {
-	background: url(images/img06.png) top right repeat;
+	background: #bf3e11;
 }
 
 #menu {
@@ -76,7 +76,7 @@
 }
 
 #menu .current_page_item {
-	background: #00626B;
+	background: #832a0b;
 	color: #FFFFFF;
 	box-shadow: inset 0px -2px 20px 0px rgba(0,0,0,0.2);
 }
@@ -144,9 +144,9 @@
 	color: #2A2A2A;
 }
 
-#content img {
+/*#content img {
 	border: 10px solid #F3F3F3;
-}
+}*/
 
 #content a img {
 }
