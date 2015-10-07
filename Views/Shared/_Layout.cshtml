@@ -1,0 +1,89 @@
+@{string ctrName = ViewContext.RouteData.Values["action"].ToString();}
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>@ViewData["Title"]</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<noscript>
+<link rel="stylesheet" href="~/css/5grid/core.css" />
+<link rel="stylesheet" href="~/css/5grid/core-desktop.css" />
+<link rel="stylesheet" href="~/css/5grid/core-1200px.css" />
+<link rel="stylesheet" href="~/css/5grid/core-noscript.css" />
+<link rel="stylesheet" href="~/css/style.css" />
+<link rel="stylesheet" href="~/css/style-desktop.css" />
+</noscript>
+<link href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.5/united/bootstrap.min.css" rel="stylesheet" integrity="sha256-nKQVXFJ5JtDJlI5p1UcSf0JOFudCj9RgjBDsJSZPsS4= sha512-dbadXecsBCgqQ5XGx6SG+bO4vsfzznX6/NfAG4CuzLi76wcdLGAw2KIcsLyv7H5XsEGq0zaznpxDCAEIX9pdYA==" crossorigin="anonymous"><link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script><script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="~/css/5grid/init.js?use=mobile,desktop,1000px&amp;mobileUI=1&amp;mobileUI.theme=none&amp;mobileUI.openerWidth=52"></script>
+<!--[if IE 9]><link rel="stylesheet" href="css/style-ie9.css" /><![endif]-->
+</head><body class="onecolumn">
+<div id="wrapper">
+	<div id="header-wrapper">
+		<header id="header">
+			<div class="5grid-layout">
+				<div class="row">
+					<div class="12u" id="logo"> <!-- Logo -->
+						<h1><a href="#" class="mobileUI-site-name">Shyon Flamenco</a></h1>
+					</div>
+				</div>
+			</div>
+			<div class="5grid-layout">
+				<div class="row">
+					<div class="12u" id="menu">
+						<div id="menu-wrapper">
+							<nav class="mobileUI-site-nav">
+								<ul>
+									@if(ctrName == "Index") {
+										<li class="current_page_item"><a href="~/">Home</a></li>
+									} else {
+										<li><a href="~/">Home</a></li>
+									}
+									@if(ctrName == "Tour") {
+										<li class="current_page_item"><a href="~/Home/Tour">Tour</a></li>
+									} else {
+										<li><a href="~/Home/Tour">Tour</a></li>
+									}
+									@if(ctrName == "Contact") {
+										<li class="current_page_item"><a href="~/Home/Contact">Contact</a></li>
+									} else {
+										<li><a href="~/Home/Contact">Contact</a></li>
+									}
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+	</div>
+	<div id="page-wrapper" class="5grid-layout">
+        @RenderBody()
+	</div>
+	
+<div id="copyright" class="5grid-layout">
+	<div class="footerCont">
+		<div class="socialNavFooter">
+			<a class="itunes" href="https://itunes.apple.com/ca/artist/jesse-cook/id538660#" target="_blank"></a> 
+			<a class="facebook" href="http://www.facebook.com/jessecookhq" target="_blank"></a> 
+			<a class="youtube" href="https://www.youtube.com/jessecookhq" target="_blank"></a> 
+			<a class="twitter" href="https://twitter.com/jessecookhq" target="_blank"></a>  
+			<a class="cbc" href="http://music.cbc.ca/artists/Jesse-Cook" target="_blank"></a>
+		</div>
+	</div>
+	<p>&copy;@DateTime.Now.Year Shyon Flamenco</p>
+</div>
+</body>
+</html>
+
+
+<!--
+	<div class="footerCont">
+
+<div class="socialNavFooter"><a class="itunes" href="https://itunes.apple.com/ca/artist/jesse-cook/id538660#" target="_blank"></a> <a class="facebook" href="http://www.facebook.com/jessecookhq" target="_blank"></a> <a class="youtube" href="https://www.youtube.com/jessecookhq" target="_blank"></a> <a class="twitter" href="https://twitter.com/jessecookhq" target="_blank"></a>  <a class="cbc" href="http://music.cbc.ca/artists/Jesse-Cook" target="_blank"></a></div>
+        <p>©2015 Jesse Cook. All Rights Reserved.
+<br>Design by <a href="http://www.janinestoll.ca" target="_blank">Janine Stoll Media</a>.</p>
+        </div>
+ -->
