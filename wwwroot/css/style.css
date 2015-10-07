@@ -116,8 +116,7 @@ ul.style1 li:last-child {
 
 ul.style1 a {
 	display: block;
-	padding: 0px 0px 0px 30px;
-	background: url(images/img03.png) no-repeat left top;
+	padding: 0px 0px 0px 15px;
 	text-decoration: none;
 	color: #525252;
 }
@@ -266,4 +265,8 @@ ul.style4 .first {
 #hero {
     padding-right: 15px;
     border: 0px;
+}
+
+#copyright {
+	background: #F0F0F0;
 }
